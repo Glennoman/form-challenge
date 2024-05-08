@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <h1>Thank you for joining us for a session at Code Labs Academy!</h1>
+        <form>
+          <section class="date-subject">
+            <label for="date">Session date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="subject">Subject</label>
+            <input type="text" list="subjects" id="subject" name="subject" required>
+            <datalist id="subjects">
+                <option value="Web Development"></option>
+                <option value="UI/UX Design"></option>
+                <option value="Data Science"></option>
+            </datalist>
+          </section><br>
+          <section class="topics">
+            <label for="extra">Please mention any topics you would like to ask further questions or gather
+                more information about</label>
+            <textarea name="extra" id="extra" rows="4" cols="40" minlength="3" maxlength="250" required></textarea>
+          </section><br>
+          <section class="home-study">
+            <span>Do you study at home?</span>
+            <input type="radio" name="home" id="home" value="yes">
+            <label for="home">No</label>
+            <input type="radio" name="home" id="home" value="no">
+            <label for="home">Yes</label>
+          </section><br>
+          <section class="more-info">
+            <input type="checkbox" name="why" id="answer" value="answer">
+            <label for="answer">I am interested in a more in depth discussion</label><br>
+            <input type="checkbox" name="why" id="answer2" value="answer2">
+            <label for="answer2">I didn't understand it in the session</label><br>
+            <input type="checkbox" name="why" id="answer3" value="answer3">
+            <label for="answer3">Phone apps</label><br>
+            <input type="hidden" name="why" id="default" required>
+          </section><br>
+          <section class="rating">
+            <label for="rate">On a scale of 1 to 5*, please indicate how informative you felt the session was.</label>
+            <input type="text" name="rate" id="rate" required><br><br>
+            <label for="rate2">On a scale of 1 to 5*, please indicate how engaging you felt the session was.</label>
+            <input type="text" name="rate2" id="rate2" required><br>
+            <label for="rate3">On a scale of 1 to 5*, please indicate how likely you feel it is that you would recommend the<br> course to a friend</label>
+            <input type="text" name="rate3" id="rate3" required><br>
+          </section><br>
+          <section class="feedback">
+            <label for="extra">Please use this space to give us any other feedback you may have.</label><br>
+            <textarea name="extra" id="extra" rows="4" cols="40" minlength="3" maxlength="250" required></textarea><br>
+          </section><br>
+          <section class="email">
+            <label for="contact">Email address:</label>
+            <input type="text" name="contact" id="contact" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}" required><br>
+          </section><br>
+          <section class="submission">
+            <input type="submit" value="Submit form">
+          </section>
+        </form>
+    
+    </body>
+</html>

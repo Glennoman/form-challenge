@@ -1,0 +1,7 @@
+body {
+    margin: 0 auto; /* This centers the content horizontally */
+    max-width: 800px; /* Adjust the maximum width as needed */
+}
+body {
+    text-align: center; /* Center-align all text within the body */
+}
